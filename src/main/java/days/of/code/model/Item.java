@@ -8,7 +8,7 @@ package days.of.code.model;
  *
  * @author dgley
  */
-public class Filme {
+public class Item {
     private String id;
     private String rank;
     private String title;
@@ -19,7 +19,8 @@ public class Filme {
     private String imDbRating;
     private String imDbRatingCount;
 
-    public Filme(String id, String rank, String title, String fullTitle, String year, String image, String crew, String imDbRating, String imDbRatingCount) {
+    public Item(String id, String rank, String title, String fullTitle, String year, String image, String crew,
+            String imDbRating, String imDbRatingCount) {
         this.id = id;
         this.rank = rank;
         this.title = title;
@@ -102,6 +103,12 @@ public class Filme {
     public void setImDbRatingCount(String imDbRatingCount) {
         this.imDbRatingCount = imDbRatingCount;
     }
-    
-    
+
+    @Override
+    public String toString() {
+        return "Item [id=" + id + ", rank=" + rank + ", title=" + title + ", fullTitle=" + fullTitle + ", year=" + year
+                + ", image=" + image + ", crew=" + crew + ", imDbRating=" + imDbRating + ", imDbRatingCount="
+                + imDbRatingCount + "]";
+    }
+
 }
