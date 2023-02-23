@@ -1,0 +1,7 @@
+<div class="card" style="max-width: 14rem">
+  <img class="card-img-top" src="%s" alt="%s">
+  <div class="card-body">
+    <h5 class="card-title">%s</h5>
+    <p class="card-text">Nota: %s - Ano: %s</p>
+  </div>
+</div>
